@@ -1,0 +1,18 @@
+# DeathManager-Velocity 配置文件
+
+# 死亡点设置
+spawn:
+  # 死亡后传送的目标服务器
+  server: "lobby"
+  # 世界名称
+  world: "world"
+  # 坐标
+  x: 0.0
+  y: 100.0
+  z: 0.0
+  # 视角
+  yaw: 0.0
+  pitch: 0.0
+
+# 调试设置
+debug: false 

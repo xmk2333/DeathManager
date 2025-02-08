@@ -1,0 +1,24 @@
+name: DeathManager-Spigot
+version: '1.0'
+main: baimo.minecraft.plugins.deathmanagerSpigot.DeathmanagerSpigot
+api-version: '1.20'
+author: baimo
+description: 死亡管理插件 - Spigot 端
+website: baimowl.cn
+depend: []
+softdepend: []
+
+commands:
+  setserverspawn:
+    description: 设置全局重生点
+    usage: /setserverspawn
+    permission: deathmanager.admin
+  deathmanager:
+    description: 插件管理命令
+    usage: /deathmanager reload
+    permission: deathmanager.admin
+
+permissions:
+  deathmanager.admin:
+    description: 允许使用管理员命令
+    default: op 

@@ -1,0 +1,68 @@
+# DeathManager-Spigot 配置文件
+
+# 是否跳过死亡传送系统（如果为true则使用本地重生点）
+bypass: false
+
+# 死亡相关设置
+death:
+  # 死亡音效设置
+  play_sound: true
+  sound: ENTITY_PLAYER_DEATH
+  volume: 1.0
+  pitch: 1.0
+  
+  # 标题设置
+  title:
+    # 死亡标题文本列表，每次死亡随机显示其中一条
+    texts:
+      - "&c你死了！"
+      - "&c死亡如风，常伴吾身"
+      - "&c这是一次糟糕的冒险..."
+      - "&c勇士，请重新振作！"
+      - "&c这只是一个小挫折..."
+    # 副标题文本，支持变量：
+    # {time} - 复活倒计时（秒）
+    subtitle: "&7{time}秒后复活..."
+    # 标题淡入时间（秒）
+    fade_in: 0.5
+    # 标题停留时间（秒）
+    stay: 5
+    # 标题淡出时间（秒）
+    fade_out: 0.5
+
+# 复活后执行的操作
+# 可用变量：
+# {player} - 玩家名称
+# {world} - 玩家所在世界
+# {x} - X坐标
+# {y} - Y坐标
+# {z} - Z坐标
+#
+# 支持的操作类型：
+# [op] - 以OP权限执行命令/可能触发提权，不推荐使用
+# [console] - 以控制台身份执行命令
+# [player] - 以玩家身份执行命令
+# [message] - 发送消息给玩家
+# [title] - 发送标题
+# [subtitle] - 发送副标题（需要和title一起使用）
+# 
+# 对于[title]和[subtitle]，可以在后面添加显示时间（tick）：
+# [title:20:100:20] - 分别表示淡入:停留:淡出时间
+respawn_commands:
+  enabled: true
+  actions:
+    - "[message]&a欢迎回来，{player}！"
+    - "[title:10:40:10]&6欢迎回来"
+    - "[subtitle:10:40:10]&7亲爱的&f{player}"
+
+# 调试设置
+debug: false
+
+# 本地重生点设置（仅在bypass=true时使用）
+spawn:
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0 

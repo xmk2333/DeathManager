@@ -1,0 +1,1 @@
+{"id":"deathmanager-velocity","name":"DeathManager-Velocity","version":"1.0-SNAPSHOT","description":"死亡管理插件","url":"baimowl.cn","authors":["Baimo"],"dependencies":[],"main":"baimo.minecraft.plugins.deathManagerVelocity.DeathManagerVelocity"}

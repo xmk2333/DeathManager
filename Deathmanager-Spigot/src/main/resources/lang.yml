@@ -1,0 +1,33 @@
+# DeathManager 语言配置文件
+
+messages:
+  # 插件消息
+  plugin:
+    enabled: "&a[DeathManager] 插件已启用"
+    disabled: "&c[DeathManager] 插件已禁用"
+    reload: "&a[DeathManager] 配置重载完成"
+    no_permission: "&c[DeathManager] 你没有权限执行此命令"
+    player_only: "&c[DeathManager] 该命令只能由玩家执行"
+
+  # 死亡相关消息
+  death:
+    event_triggered: "[DeathManager] 玩家死亡事件触发: {player}"
+    bypass_enabled: "[DeathManager] 跳过玩家死亡处理: {player}"
+    processing: "[DeathManager] 正在处理玩家死亡: {player}"
+    teleporting: "&a[DeathManager] 正在将你传送到重生点..."
+    request_spawn: "[DeathManager] 正在发送重生点请求: {player}"
+
+  # 重生相关消息
+  respawn:
+    event_triggered: "[DeathManager] 玩家重生事件触发: {player}"
+    bypass_enabled: "[DeathManager] 跳过重生处理: {player}"
+    location_set: "[DeathManager] 设置重生位置: player={player}, world={world}, x={x}, y={y}, z={z}"
+    error: "[DeathManager] 设置重生点时出错: {error}"
+    state_reset: "[DeathManager] 重置玩家状态: {player}"
+    state_reset_complete: "[DeathManager] 玩家状态重置完成: {player}"
+
+  # 重生点设置相关消息
+  spawn:
+    set_success: "&a[DeathManager] 已设置全局死亡重生点"
+    set_error: "&c[DeathManager] 设置死亡点时出错，请查看控制台日志"
+    set_complete: "[DeathManager] 死亡点设置完成: server={server}, world={world}, x={x}, y={y}, z={z}" 
